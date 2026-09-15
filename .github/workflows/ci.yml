@@ -1,20 +1,4 @@
-name: Docker CI
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Build Docker image
-        run: docker build -t docker-todo-app .name: Docker CI/CD
+name: Docker CI/CD
 
 on:
   push:
